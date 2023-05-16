@@ -30,8 +30,10 @@
       <span><?= $movie -> duration . " mins"; ?></span>
     </div>
     <div class="card-footer">
-      <?php if ($movie -> rating >= 6) : ?>
+      <?php if ($movie -> rating >= 7) : ?>
       <h6 class="d-inline text-success">Rating: </h6>
+      <?php elseif ($movie -> rating >= 4) : ?>
+      <h6 class="d-inline text-warning">Rating: </h6>
       <?php else : ?>
       <h6 class="d-inline text-danger">Rating: </h6>
       <?php endif ?>
