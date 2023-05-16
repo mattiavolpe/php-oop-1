@@ -1,12 +1,8 @@
 <?php
   class Genre {
-    public $name = [];
+    public $name;
 
-    public function __construct(array $singleGenre) {
-      foreach ($singleGenre as $key => $item) {
-        array_push($this -> name, [
-          "genre".$key => $item
-        ]);
-      }
+    public function __construct(string $genre) {
+      $this -> name = $genre;
     }
   }

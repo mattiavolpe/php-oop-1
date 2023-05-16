@@ -16,14 +16,12 @@
       <span><?= $movie -> year; ?></span>
       <br>
       <h6 class="d-inline text-warning">Genre: </h6>
-      <?php foreach ($movie -> genre -> name as $genre) : ?>
-        <?php foreach ($genre as $key => $value) : ?>
-          <?php if($key === "genre0") : ?>
-            <span><?= $value; ?></span>
-          <?php else : ?>
-            <span><?= ", " . $value; ?></span>
-          <?php endif; ?>
-        <?php endforeach ?>
+      <?php foreach ($movie -> genre as $key => $genre) : ?>
+        <?php if($key === 0) : ?>
+          <span><?= $genre -> name; ?></span>
+        <?php else : ?>
+          <span><?= ", " . $genre -> name; ?></span>
+        <?php endif; ?>
       <?php endforeach ?>
       <br>
       <h6 class="d-inline text-warning">Duration: </h6>

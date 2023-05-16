@@ -4,12 +4,12 @@
     public $description;
     public $director;
     public $year;
-    public $genre;
+    public $genre = [];
     public $duration;
     public $rating;
     public $coverImage;
 
-    public function __construct(string $title, string $description, Director $director, int $year, Genre $genre, int $duration, float $rating, string $image) {
+    public function __construct(string $title, string $description, Director $director, int $year, array $genre, int $duration, float $rating, string $image) {
       $this -> title = $title;
       $this -> description = $description;
       $this -> director = $director;
