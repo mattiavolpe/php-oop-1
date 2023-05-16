@@ -22,9 +22,9 @@
 
   $ratingBase = 10;
 
-  include __DIR__ . "/Models/movie.php";
-  include __DIR__ . "/Models/director.php";
-  include __DIR__ . "/Models/genre.php";
+  include __DIR__ . "/Models/Movie.php";
+  include __DIR__ . "/Models/Director.php";
+  include __DIR__ . "/Models/Genre.php";
 
   include __DIR__ . "/db.php";
 ?>
